@@ -43,6 +43,9 @@ dependencies {
 
     //Dependency 추가(thymeleaf)
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    //Dependency 추가(Spring Configuration Processor )
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 }
 
 tasks.named('test') {
