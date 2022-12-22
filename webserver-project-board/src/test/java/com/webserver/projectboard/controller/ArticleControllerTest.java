@@ -37,7 +37,7 @@ class ArticleControllerTest {
 
     }
 
-    @Disabled("구현 중")
+
     @DisplayName("[view] [GET] 게시글 상세 페이지 - 정상 호출")
         @Test
         public void givenNothing_whenRequestingArticleView_thenReturnsArticleView() throws Exception {
@@ -51,6 +51,7 @@ class ArticleControllerTest {
                 .andExpect(model().attributeExists("article")) //데이터가 있나없나 확인가능
                 .andExpect(model().attributeExists("articleComments")); //데이터가 있나없나 확인가능
     }
+    
 
     @Disabled("구현 중")
     @DisplayName("[view] [GET] 게시글 검색 전용 페이지 - 정상 호출")
